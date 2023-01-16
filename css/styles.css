@@ -82,6 +82,18 @@ header {
     color: #E5E7EB;
 }
 
+.hero-data button{
+    background-color: #3B82F6;
+    color:#f9faf8;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: block;
+    width: 25%;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
 .hero-img {
     max-width: 90%;
 }
@@ -155,7 +167,7 @@ blockquote{
 }
 
 .grid-2-1-column{
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 80% 20%;
     padding: 50px 100px;
     justify-content: space-between;
 }
@@ -180,6 +192,20 @@ blockquote{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.grid-1 button {
+    background-color: transparent;
+    color:#ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: block;
+    width: 50%;
+    justify-items: end;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 /*Footer CSS*/
