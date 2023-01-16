@@ -6,6 +6,7 @@
     font-family: Poppins;
 }
 
+/*Header Section CSS*/
 .header{
     background-color: #1f2937;
     max-width: 100%;
@@ -41,7 +42,7 @@ header {
     color: #e5e7eb;
 }
 
-
+/*Hero Section CSS*/
 .section-hero{
     background-color: #1f2937;
     height: 435px;
@@ -72,7 +73,7 @@ header {
 }
 .main-text{
     font-size: 48px;
-    font-weight: bolder;
+    font-weight: extra-bold;
     color: #F9FAF8;
 }
 
@@ -85,6 +86,7 @@ header {
     max-width: 90%;
 }
 
+/*Information Section cSS*/
 .section-info{
     height: 500px;
     display: flex;
@@ -117,12 +119,75 @@ p.info {
     text-align: center;
 }
 
-
+/*Blockquote CSS*/
 .section-quote {
     height:430px;
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+blockquote{
+    color: #1f2937;
+    font-style: italic;
+    font-size: 36px;
+}
+
+.section-quote .author {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+/*Call to Action CSS*/
+.section-action{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 1400px;
+    background-color: #3B82F6;
+    border-radius: 10px;
+}
+
+.grid-2-1-column{
+    grid-template-columns: 2fr 1fr;
+    padding: 50px 100px;
+    justify-content: space-between;
+}
+
+.grid-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-2 h3{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.grid-2 p{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.grid-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Footer CSS*/
+footer{
+    height: 100px;
+    background-color: #1f2937;
+    color: #F9FAF8;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
