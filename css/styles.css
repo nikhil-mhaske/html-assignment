@@ -6,8 +6,18 @@
     font-family: Poppins;
 }
 
+html {
+    font-size: 62.5%;
+
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 /*Header Section CSS*/
-.header{
+.header {
     background-color: #1f2937;
     max-width: 100%;
 }
@@ -42,8 +52,99 @@ header {
     color: #e5e7eb;
 }
 
+/*Mobile Navbar CSS*/
+.mobile-nav-icon {
+    width: 40px;
+    height: 40px;
+    color: #F9FAF8
+}
+
+.mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+/*Responsive Header*/
+
+/*Below 980px*/
+@media(max-width: 62em) {
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 10;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background: #1f2937;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /*transition*/
+        transform: translatex(100%);
+        transition: all 0.5s linear;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .active .navbar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
+}
+
+/*Below 560px*/
+@media(max-width: 35em) {
+    .header {
+        padding: 0 2.4rem;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+}
+
+
 /*Hero Section CSS*/
-.section-hero{
+.section-hero {
     background-color: #1f2937;
     height: 435px;
     display: flex;
@@ -52,17 +153,17 @@ header {
 }
 
 .container {
-    max-width:1400px;
+    max-width: 1400px;
     margin: auto auto;
 }
 
 
 .grid {
     display: grid;
-    gap: 50px;
+    gap: 140px;
 }
 
-.grid-two-column{
+.grid-two-column {
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -71,7 +172,8 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-.main-text{
+
+.main-text {
     font-size: 48px;
     font-weight: extra-bold;
     color: #F9FAF8;
@@ -82,9 +184,9 @@ header {
     color: #E5E7EB;
 }
 
-.hero-data button{
+.hero-data button {
     background-color: #3B82F6;
-    color:#f9faf8;
+    color: #f9faf8;
     border: none;
     border-radius: 5px;
     padding: 10px 10px;
@@ -94,24 +196,25 @@ header {
     margin-top: 20px;
     cursor: pointer;
 }
+
 .hero-img {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 /*Information Section cSS*/
-.section-info{
+.section-info {
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.grid-four-column{
+.grid-four-column {
     grid-template-columns: repeat(4, 1fr);
 }
 
 .small-container {
-    max-width:1200px;
+    max-width: 1200px;
     margin: auto auto;
 }
 
@@ -120,11 +223,12 @@ img {
     display: block;
 }
 
-h2{
+h2 {
     text-align: center;
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
+    padding-bottom: 30px;
 }
 
 p.info {
@@ -133,7 +237,7 @@ p.info {
 
 /*Blockquote CSS*/
 .section-quote {
-    height:430px;
+    height: 430px;
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
@@ -141,7 +245,7 @@ p.info {
     justify-content: center;
 }
 
-blockquote{
+blockquote {
     color: #1f2937;
     font-style: italic;
     font-size: 36px;
@@ -154,19 +258,20 @@ blockquote{
 
 
 /*Call to Action CSS*/
-.section-action{
+.section-action {
     height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.box{
+
+.box {
     width: 1400px;
     background-color: #3B82F6;
     border-radius: 10px;
 }
 
-.grid-2-1-column{
+.grid-2-1-column {
     grid-template-columns: 80% 20%;
     padding: 50px 100px;
     justify-content: space-between;
@@ -178,12 +283,12 @@ blockquote{
     justify-content: center;
 }
 
-.grid-2 h3{
+.grid-2 h3 {
     font-size: 24px;
     color: #F9FAF8;
 }
 
-.grid-2 p{
+.grid-2 p {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -196,7 +301,7 @@ blockquote{
 
 .grid-1 button {
     background-color: transparent;
-    color:#ffffff;
+    color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 5px;
     padding: 10px 10px;
@@ -209,7 +314,7 @@ blockquote{
 }
 
 /*Footer CSS*/
-footer{
+footer {
     height: 100px;
     background-color: #1f2937;
     color: #F9FAF8;
