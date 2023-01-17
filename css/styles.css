@@ -176,6 +176,7 @@ p.info {
 blockquote {
     color: #1f2937;
     font-style: italic;
+    font-weight: lighter;
     font-size: 3.6rem;
 }
 
@@ -338,15 +339,32 @@ footer {
 
     
    /*Making fit content height*/
-    .section-hero , .section-info , .section-quote , .section-action{
+    .section-hero , .section-info , .section-quote, .section-action{
         height:fit-content;
     }
 
     /*Section info css*/
     .section-info {
-        padding: 3rem 0;
+        padding: 10rem 0;
     }
 
+
+    /*Blockquote*/
+    .section-quote {
+        padding: 10rem 5rem;
+    }
+    blockquote {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    
+    .section-quote .author {
+        padding-top: 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    
     
 }
 
