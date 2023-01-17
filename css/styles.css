@@ -8,7 +8,6 @@
 
 html {
     font-size: 62.5%;
-
     overflow-x: hidden;
 }
 
@@ -23,8 +22,7 @@ body {
 }
 
 header {
-    padding: 0 auto;
-    height: 100px;
+    height: 10rem;
     background-color: #1f2937;
 
     display: flex;
@@ -33,14 +31,14 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #f9f1f8;
 }
 
 .navbar-list {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .navbar-link {
@@ -48,14 +46,14 @@ header {
     text-decoration: none;
     text-transform: uppercase;
 
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #e5e7eb;
 }
 
 /*Mobile Navbar CSS*/
 .mobile-nav-icon {
-    width: 40px;
-    height: 40px;
+    width: 3rem;
+    height: 3rem;
     color: #F9FAF8
 }
 
@@ -69,10 +67,195 @@ header {
     display: none;
 }
 
-/*Responsive Header*/
 
-/*Below 980px*/
-@media(max-width: 62em) {
+/*Hero Section CSS*/
+.section-hero {
+    background-color: #1f2937;
+    height: 43.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 140rem;
+    margin: auto auto;
+}
+
+
+.grid {
+    display: grid;
+    gap: 14rem;
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-text {
+    font-size: 4.8rem;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.secondary-text {
+    font-size: 1.8rem;
+    color: #E5E7EB;
+}
+
+.hero-data button {
+    background-color: #3B82F6;
+    color: #f9faf8;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 1rem;
+    display: block;
+    width: 25%;
+    font-weight: bold;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.hero-img {
+    max-width: 100%;
+}
+
+
+
+/*Information Section cSS*/
+.section-info {
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-four-column {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.small-container {
+    max-width: 120rem;
+    margin: auto auto;
+}
+
+img {
+    margin: 1rem auto;
+    display: block;
+}
+h2 {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: bolder;
+    color: #1f2937;
+    padding-bottom: 3rem;
+}
+
+p.info {
+    text-align: center;
+}
+
+/*Blockquote CSS*/
+.section-quote {
+    height: 43rem;
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+blockquote {
+    color: #1f2937;
+    font-style: italic;
+    font-size: 3.6rem;
+}
+
+.section-quote .author {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+/*Call to Action CSS*/
+.section-action {
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 140rem;
+    background-color: #3B82F6;
+    border-radius: 1rem;
+}
+
+.grid-2-1-column {
+    grid-template-columns: 80% 20%;
+    padding: 5rem 10rem;
+    justify-content: space-between;
+}
+
+.grid-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-2 h3 {
+    font-size: 2.4rem;
+    color: #F9FAF8;
+}
+
+.grid-2 p {
+    font-size: 1.8rem;
+    color: #E5E7EB;
+}
+
+.grid-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-1 button {
+    background-color: transparent;
+    color: #ffffff;
+    border: .2rem solid #ffffff;
+    border-radius: .5rem;
+    padding: 1rem 1rem;
+    display: block;
+    width: 50%;
+    justify-items: end;
+    font-weight: bold;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/*Footer CSS*/
+footer {
+    height: 10rem;
+    background-color: #1f2937;
+    color: #F9FAF8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Below 992px*/
+@media screen and (max-width: 992px) {
+
+    /*Responsive Header*/
+    html {
+        font-size: 55%;
+    }
     .mobile-navbar-btn {
         display: block;
         z-index: 10;
@@ -80,10 +263,6 @@ header {
 
     .header {
         position: relative;
-    }
-
-    .logo {
-        font-size: 20px;
     }
 
     .navbar {
@@ -129,196 +308,52 @@ header {
     .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
         display: none;
     }
+
+
+    /*Responsive Hero*/
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+    }
+
+
+    .hero-data h1, .hero-data p, .hero-data button{
+        text-align: center;
+    }
+
+    .hero-data{
+        padding: 0 15rem;
+    }
+
+    .hero-data button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    
+   
+    .section-hero , .section-info , .section-quote , .section-action{
+        height:fit-content;
+    }
+
+    
 }
 
-/*Below 560px*/
-@media(max-width: 35em) {
+/*Below 768px*/
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 45%;
+    }
     .header {
         padding: 0 2.4rem;
     }
 
-    .logo {
-        font-size: 20px;
+    .section-hero , .section-info , .section-quote , .section-action{
+        height:fit-content;
     }
-}
-
-
-/*Hero Section CSS*/
-.section-hero {
-    background-color: #1f2937;
-    height: 435px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    max-width: 1400px;
-    margin: auto auto;
-}
-
-
-.grid {
-    display: grid;
-    gap: 140px;
-}
-
-.grid-two-column {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.hero-data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.main-text {
-    font-size: 48px;
-    font-weight: extra-bold;
-    color: #F9FAF8;
-}
-
-.secondary-text {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-.hero-data button {
-    background-color: #3B82F6;
-    color: #f9faf8;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 10px;
-    display: block;
-    width: 25%;
-    font-weight: bold;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.hero-img {
-    max-width: 100%;
-}
-
-/*Information Section cSS*/
-.section-info {
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.grid-four-column {
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.small-container {
-    max-width: 1200px;
-    margin: auto auto;
-}
-
-img {
-    margin: auto;
-    display: block;
-}
-
-h2 {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bolder;
-    color: #1f2937;
-    padding-bottom: 30px;
-}
-
-p.info {
-    text-align: center;
-}
-
-/*Blockquote CSS*/
-.section-quote {
-    height: 430px;
-    background-color: #e5e7eb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-blockquote {
-    color: #1f2937;
-    font-style: italic;
-    font-size: 36px;
-}
-
-.section-quote .author {
-    text-align: right;
-    font-weight: bold;
-}
-
-
-/*Call to Action CSS*/
-.section-action {
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.box {
-    width: 1400px;
-    background-color: #3B82F6;
-    border-radius: 10px;
-}
-
-.grid-2-1-column {
-    grid-template-columns: 80% 20%;
-    padding: 50px 100px;
-    justify-content: space-between;
-}
-
-.grid-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.grid-2 h3 {
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.grid-2 p {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-.grid-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.grid-1 button {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    padding: 10px 10px;
-    display: block;
-    width: 50%;
-    justify-items: end;
-    font-weight: bold;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-/*Footer CSS*/
-footer {
-    height: 100px;
-    background-color: #1f2937;
-    color: #F9FAF8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
