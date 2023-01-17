@@ -149,6 +149,7 @@ img {
     margin: 1rem auto;
     display: block;
 }
+
 h2 {
     text-align: center;
     font-size: 3.6rem;
@@ -159,6 +160,7 @@ h2 {
 
 p.info {
     text-align: center;
+    font-size: 1.8rem;
 }
 
 /*Blockquote CSS*/
@@ -335,9 +337,14 @@ footer {
     }
 
     
-   
+   /*Making fit content height*/
     .section-hero , .section-info , .section-quote , .section-action{
         height:fit-content;
+    }
+
+    /*Section info css*/
+    .section-info {
+        padding: 3rem 0;
     }
 
     
@@ -346,7 +353,7 @@ footer {
 /*Below 768px*/
 @media screen and (max-width: 768px) {
     html{
-        font-size: 45%;
+        font-size: 50%;
     }
     .header {
         padding: 0 2.4rem;
