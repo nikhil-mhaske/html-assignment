@@ -146,7 +146,7 @@ header {
 }
 
 img {
-    margin: 1rem auto;
+    margin: 3rem auto;
     display: block;
 }
 
@@ -252,6 +252,10 @@ footer {
     justify-content: center;
 }
 
+footer .p {
+    font-size: 3.6rem;
+}
+
 /*Below 992px*/
 @media screen and (max-width: 992px) {
 
@@ -326,15 +330,18 @@ footer {
         text-align: center;
     }
 
-    .hero-data{
-        padding: 0 15rem;
+    .hero-data , .hero-img{
+        padding: 0 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .hero-data button{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 50%;
     }
 
     
@@ -364,7 +371,28 @@ footer {
         text-align: center;
         font-weight: bold;
     }
-    
+
+    /*Action Section Responsiveness*/
+    .section-action{
+        padding: 5rem 3rem;
+    }
+    .grid-2-1-column {
+        padding: 2rem 1rem;
+    }
+
+    .grid-2 , .grid-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-2 h3, .grid-2 p, .grid-1 button {
+        text-align: center;
+    }
+
+    .grid-1 button{
+        width: 50%;
+    }
     
 }
 
